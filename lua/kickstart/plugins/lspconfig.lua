@@ -204,6 +204,35 @@ return {
             },
           },
         },
+
+        basedpyright = {
+          settings = {
+            basedpyright = {
+              disableOrganizeImports = true,
+              analysis = {
+                ignore = { '*' },
+                -- typeCheckingMode = 'standard',
+                -- diagnosticSeverityOverrides = {
+                --   reportUnusedImport = 'information',
+                --   reportUnusedFunction = 'information',
+                --   reportUnusedVariable = 'information',
+                --   reportUnusedParameter = 'none',
+                -- },
+              },
+            },
+          },
+          on_attach = function(client, _)
+            -- looks like i have to do this but idk really lmao
+            client.server_capabilities.hoverProvider = true
+          end,
+        },
+
+        ruff = {
+          on_attach = function(client, _)
+            -- looks like i have to do this but idk really lmao
+            client.server_capabilities.hoverProvider = false
+          end,
+        },
       }
 
       -- Ensure the servers and tools above are installed
