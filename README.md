@@ -1,5 +1,11 @@
 # kickstart-modular.nvim
 
+## Disclaimer
+
+i got no idea what the fuck i'm doing i make shit up as i go
+
+keep ballin'
+
 ## Introduction
 
 *This is a fork of [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) that moves from a single file to a multi file configuration.*
